@@ -20,15 +20,10 @@ else:
     print("Sorry \n" + certificate_no+" Is A Invalid Certificate")
     
 
-if dl=='Y': 
+if dl=='Y' or dl =='y': 
     file_name = wget.download(cerdl)
     print('Certificate Is Successfully Downloaded: ', file_name)
-elif dl=='y':
-    file_name = wget.download(cerdl)
-    print('Certificate Is Successfully Downloaded: ', file_name)
-elif dl=='N':
-    print('Okay,Thanks for using.')
-elif dl=='n':
+elif dl=='N' or dl== 'n':
     print('Okay,Thanks for using.')
 else:
     print("Invalid Option Choose Y/N")
